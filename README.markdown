@@ -146,10 +146,60 @@ The notebook generates insightful visualizations:
 - Decision Tree is interpretable but may overfit without tuning.
 - SVC is robust but computationally intensive.
 
+## Contributing
+
+We welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-branch`).
+3. Commit changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
+
+Please adhere to PEP 8 standards and include tests for new features.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 ---
 
-**Author**: \[Abdelrahman Sayed Nasr\]\
-**Contact**: \[abdelrahmansayed880@gmail.com\]\
+**Author**: \[Your Name\]\
+**Contact**: \[Your Email or GitHub Profile\]\
 **Last Updated**: May 9, 2025
 
 ---
+
+**Note**: The images referenced (e.g., `workflow.png`, `dataset_head.png`) are placeholders. To include them on GitHub:
+
+1. Generate or capture screenshots of the dataset, preprocessed data, and visualizations from the notebook.
+2. Save plots (e.g., correlation heatmap, class distribution) using `plt.savefig()` in the notebook.
+3. Place images in an `images/` folder in the repository.
+4. Update the README with actual paths to images.
+
+For statistics graphs (e.g., class distribution, correlation heatmap), add the following code to your notebook and save the plots:
+
+```python
+# Class Distribution
+plt.figure(figsize=(6, 4))
+sns.countplot(x='cardio', data=cardio_data)
+plt.title('Class Distribution of Cardiovascular Disease')
+plt.savefig('images/class_distribution.png')
+plt.show()
+
+# Correlation Heatmap
+plt.figure(figsize=(10, 8))
+sns.heatmap(cardio_data.corr(), annot=True, cmap='coolwarm', fmt='.2f')
+plt.title('Feature Correlation Heatmap')
+plt.savefig('images/correlation_heatmap.png')
+plt.show()
+
+# Age Distribution
+plt.figure(figsize=(8, 5))
+sns.histplot(processed_data['age'], bins=8, kde=True)
+plt.title('Age Distribution (Binned)')
+plt.savefig('images/age_distribution.png')
+plt.show()
+```
+
+Run these cells, ensure the `images/` folder exists, and push the images to your GitHub repository.
