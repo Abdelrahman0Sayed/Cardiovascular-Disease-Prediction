@@ -130,15 +130,8 @@ The notebook generates insightful visualizations:
 | Decision Tree | TBD\* | TBD\* | TBD\* | TBD\* | TBD\* |
 | Random Forest | TBD\* | TBD\* | TBD\* | TBD\* | TBD\* |
 | SVC | TBD\* | TBD\* | TBD\* | TBD\* | TBD\* |
-| \*Note: Run the notebook to compute exact metrics. |  |  |  |  |  |
 
-- | | | | | |
-
-  | | | | | |
-
-  | | | | | |
-
-  | | | | | |
+- \*Note: Run the notebook to compute exact metrics.
 
 **Key Insights**:
 
